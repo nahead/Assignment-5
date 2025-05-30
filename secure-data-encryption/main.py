@@ -109,7 +109,6 @@ def login_page():
 # ---------- Main App ----------
 def main():
     st.set_page_config(page_title="Secure Data Vault", layout="wide")
-
     st.markdown("""
         <style>
         .block-container {
@@ -123,10 +122,8 @@ def main():
         }
         </style>
     """, unsafe_allow_html=True)
-
     st.sidebar.title("🔐 Secure Vault Menu")
     menu = st.sidebar.radio("Navigation", ["🏠 Home", "📥 Insert Data", "🔓 Retrieve Data", "🔑 Admin Login"])
-
     st.title("🔐 Secure Data Encryption System")
     st.write("Protect and manage sensitive information using encryption.")
 
